@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_shape"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@+id/back">
+
+
+               <EditText
+                   android:id="@+id/search_input"
+                   android:layout_width="match_parent"
+                   android:background="@null"
+                   android:textSize="15dp"
+                   android:imeOptions="actionSearch"
+                   android:singleLine="true"
+                   android:hint="输入药材名称搜索"
+                   android:paddingLeft="10dp"
+                   android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:text="取消"
+
+            android:layout_marginRight="10dp"
+
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eeeeee"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_result">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

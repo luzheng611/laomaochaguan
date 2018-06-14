@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_sel"
+    >
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:id="@+id/head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_circle_1dp_head"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/petName"
+        android:minHeight="30dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/head"
+        android:layout_alignTop="@+id/head"
+        android:text="昵称"
+        android:textColor="@color/wordhuise"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:minHeight="30dp"
+
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/petName"
+        android:text="时间"
+        android:textColor="@color/wordhuise"
+        android:layout_marginLeft="15dp"
+        android:textSize="12dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"/>
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        >
+
+    </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+    <TextView
+        android:id="@+id/ctr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="点击"
+        android:textSize="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/wordhuise"
+        android:layout_below="@+id/video"
+        />
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="点赞"
+        android:textSize="12dp"
+        android:textColor="@color/wordhuise"
+        android:layout_toRightOf="@+id/ctr"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/video"/>
+    <TextView
+        android:id="@+id/commet"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="评论"
+        android:textSize="12dp"
+        android:textColor="@color/wordhuise"
+        android:layout_toRightOf="@+id/like"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/video"/>
+
+</RelativeLayout>

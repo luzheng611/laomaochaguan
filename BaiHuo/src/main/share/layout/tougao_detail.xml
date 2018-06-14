@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_default" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.ytl.xiaochengxu.View.mTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="发布人"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.ytl.xiaochengxu.View.mTextView
+            android:id="@+id/tougao_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <com.ytl.xiaochengxu.View.mTextView
+            android:id="@+id/tougao_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray"
+            android:ellipsize="end"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.ytl.xiaochengxu.View.mTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.ytl.xiaochengxu.View.mEditText
+            android:id="@+id/tougao_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="标题内容"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.ytl.xiaochengxu.View.mTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="详情"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.ytl.xiaochengxu.View.mEditText
+            android:id="@+id/tougao_detail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="内容"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.ytl.xiaochengxu.View.mTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="封面及图片"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/tougao_detail_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/tougao_edit_bg"
+            android:padding="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+             />
+
+    </LinearLayout>
+
+    <com.ytl.xiaochengxu.TouGao.mGridView
+        android:id="@+id/tougao_detail_iamges"
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:verticalSpacing="5dp">
+
+    </com.ytl.xiaochengxu.TouGao.mGridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#e6e6e6" />
+
+    <LinearLayout
+        android:id="@+id/tougao_detail_fujian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <com.ytl.xiaochengxu.View.mTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="附件"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/update"
+                android:text="修改"
+                android:textColor="@color/white"
+                android:background="@drawable/button1_sel"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#e6e6e6" />
+        <com.ytl.xiaochengxu.View.mTextView
+            android:id="@+id/tougao_detail_commit"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:text="保存修改"
+            android:background="@drawable/button1_sel"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="10dp"/>
+
+        <!--<com.ytl.xiaochengxu.View.mTextView-->
+            <!--android:id="@+id/tougao_detail_fabu"-->
+            <!--android:layout_width="240dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:text="立即发布"-->
+            <!--android:background="@drawable/button1_sel"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="15dp"/>-->
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

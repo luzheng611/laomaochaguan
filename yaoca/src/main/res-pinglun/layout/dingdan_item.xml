@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="名称"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="现价"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/num"
+        android:text="原价"
+        android:layout_marginLeft="10dp"
+        android:minEms="6"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/username"
+        android:layout_marginLeft="10dp"
+        android:text="数量"
+        android:textSize="13dp" />
+    <TextView
+        android:id="@+id/tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num"
+        android:text="标签"
+        android:textColor="@color/wordhuise"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="15dp" />
+
+</RelativeLayout>

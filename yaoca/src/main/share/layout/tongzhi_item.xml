@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_sel"
+    android:padding="10dp"
+    android:id="@+id/content"
+    android:hapticFeedbackEnabled="true">
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:id="@+id/tongzhi_item_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/tongzhi_head_tip"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/tongzhi_item_head"
+        android:layout_alignRight="@id/tongzhi_item_head"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tongzhi_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tongzhi_item_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/tongzhi_item_head"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/tongzhi_item_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:maxLength="8"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:textSize="14dp"
+        android:layout_toRightOf="@+id/tongzhi_item_name"
+        android:layout_alignBottom="@id/tongzhi_item_name"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tongzhi_item_msg"
+        android:layout_below="@+id/tongzhi_item_name"
+        android:layout_alignLeft="@+id/tongzhi_item_name"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/tongzhi_linear"
+        />
+    <LinearLayout
+        android:id="@+id/tongzhi_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tongzhi_diny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拒绝"
+            android:drawablePadding="5dp"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tongzhi_tongyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意"
+            android:drawablePadding="5dp"
+            android:textColor="@color/main_color" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tongzhi_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tongzhi_item_head"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/tongzhi_linear"
+        android:layout_toRightOf="@+id/tongzhi_item_head"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="14dp" />
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:background="@color/red"
+        android:text="删除"
+        android:id="@+id/delete"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="5dp"/>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

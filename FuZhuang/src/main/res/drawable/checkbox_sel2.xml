@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="false">
+        <shape android:shape="oval">
+            <corners android:radius="25dp"/>
+            <stroke android:color="#d6d6d6"
+                android:width="1.5px"/>
+            <size android:width="25dp"
+                android:height="25dp"/>
+        </shape>
+    </item>
+    <item android:state_selected="true"  android:drawable="@drawable/gou_black">
+
+    </item>
+</selector>

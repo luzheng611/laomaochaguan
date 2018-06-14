@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/itme_tvnianjingtime"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <View
+                android:background="@color/main_color"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="4dp"/>
+            <ImageView
+                android:src="@drawable/time"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <View
+                android:background="@color/main_color"
+                android:layout_width="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/itme_tvnianjingname"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="10dp"
+            android:minEms="11"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingLeft="8dp"
+            android:background="@drawable/jiantou"
+            android:layout_width="140dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/itme_tvnianjingnum"
+            android:textColor="@color/main_color"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+

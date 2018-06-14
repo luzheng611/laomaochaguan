@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/zixun_detail_titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/titlebar_bg"
+        >
+
+        <ImageView
+            android:id="@+id/zixun_detail_leftImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/back"
+            android:background="@drawable/back_sel"
+            android:scaleType="fitCenter"
+             />
+        <ImageView
+            android:id="@+id/zixun_detail_shoucang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/shoucang_selector"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="45dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/content_layout">
+
+            <TextView
+                android:id="@+id/zixun_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/zixun_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/zixun_detail_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+            <ViewStub
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/zixun_detail_viewstub"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"/>
+            <com.laomachaguan.View.myWebView
+                android:id="@+id/zixun_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="70dp"
+                android:id="@+id/activity"
+                android:visibility="gone"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button1_sel"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/zixun_detail_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/main_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/zixun_detail_dianzan"
+                android:layout_gravity="center_horizontal"
+                android:minWidth="70dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/pay_choose_selector">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/dianzan"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:id="@+id/zixun_detail_dianzan_img"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:id="@+id/zixun_detail_dianzan_text"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/zixun_Detail_appendPLNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#229b9b9b"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="评论"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+
+            <com.laomachaguan.View.mPLlistview
+                android:id="@+id/zixun_Detail_PL_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:paddingTop="0dp"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none">
+
+            </com.laomachaguan.View.mPLlistview>
+        </LinearLayout>
+
+    </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/huise"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="45dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/pinglun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/back_sel"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/pinglun"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/pltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#aaaaaa"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/fenxiangb"
+                android:background="@drawable/back_sel"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/fenxiangb"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/fxtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000"
+        android:visibility="gone"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/zixun_detail_toPinglun_buttom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#ffffff"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/zixun_detail_apply_edt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_shape"
+            android:ellipsize="start"
+            android:maxLength="300"
+            android:maxLines="4"
+            android:paddingLeft="5dp"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/zixun_detail_fasong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/button1_sel"
+            android:textSize="15dp" />
+
+
+        <ImageView
+            android:id="@+id/zixun_detail_fenxiang2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/share_small"
+            />
+    </LinearLayout>
+    </FrameLayout>
+
+</merge>

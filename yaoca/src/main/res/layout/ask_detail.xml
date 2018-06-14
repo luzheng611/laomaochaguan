@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/main_color">
+
+        <ImageView
+            android:id="@+id/zixun_item_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_sel"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="私信详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/zixun_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="标题"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/zixun_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/zixun_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="时间"
+                    android:textColor="@color/gray"
+                    android:textSize="13dp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#e6e6e6" />
+
+            <ImageView
+                android:id="@+id/zixun_item_img"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@drawable/back_sel"
+                android:onClick="onClick"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/scroll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="50dp"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:scrollbars="none">-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swip"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="51dp"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/zixun_item_plListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:padding="5dp"
+            android:scrollbars="none">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--</ScrollView>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:background="#e6e6e6" />
+
+    <LinearLayout
+        android:id="@+id/chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/audio_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/audio_sel" />
+
+        <EditText
+            android:id="@+id/zixun_item_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="请输入"
+            android:paddingLeft="5dp"
+            android:textColorHint="#d6d6d6"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/audio_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/audio_text_sel"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/zixun_detail_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+            android:padding="3dp"
+            android:src="@drawable/chat_add" />
+
+        <TextView
+            android:id="@+id/zixun_item_fasong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1_sel"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <!--首先显示的-->
+    <LinearLayout
+        android:id="@+id/line_first_show"
+        style="@style/bottom_rela"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <!--<RelativeLayout style="@style/bottom_rela">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_love"-->
+                <!--style="@style/bottom_img"-->
+                <!--android:src="@mipmap/ic_launcher" />-->
+        <!--</RelativeLayout>-->
+
+        <View
+            style="@style/view_line"></View>
+
+        <RelativeLayout
+            style="@style/bottom_rela"
+            android:layout_weight="4">
+
+            <Button
+                android:id="@+id/btn_support"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/include_btn_support"
+                android:gravity="center"
+                android:text="我要支持"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--第二个显示的-->
+    <LinearLayout
+        android:id="@+id/line_second_show"
+        style="@style/bottom_rela"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout style="@style/bottom_rela">
+
+            <ImageView
+                android:id="@+id/img_weixin"
+                style="@style/bottom_img"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/bottom_rela">
+
+            <ImageView
+                android:id="@+id/img_qq"
+                style="@style/bottom_img"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/bottom_rela">
+
+            <ImageView
+                android:id="@+id/img_weibo"
+                style="@style/bottom_img"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <View
+        style="@style/view_line"></View>
+
+    <!--<RelativeLayout style="@style/bottom_rela">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_share"-->
+            <!--style="@style/bottom_img"-->
+            <!--android:src="@mipmap/ic_launcher" />-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

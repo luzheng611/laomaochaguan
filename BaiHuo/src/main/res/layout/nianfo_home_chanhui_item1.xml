@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:id="@+id/nianfo_home_chanhui_item_head"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="13%w"
+        app:layout_heightPercent="13%w"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nianfo_home_chanhui_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/nianfo_home_chanhui_item_head"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/nianfo_home_chanhui_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/nianfo_home_chanhui_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nianfo_home_chanhui_item_username"
+        android:layout_below="@+id/nianfo_home_chanhui_item_username"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:lineSpacingExtra="5dp"
+        android:textSize="14sp" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/nianfo_home_chanhui_item_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/nianfo_home_chanhui_item_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/nianfo_home_chanhui_item_dianzan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button1_sel"
+            android:gravity="center"
+            android:text="随喜"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/nianfo_home_chanhui_item_image3"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_widthPercent="10%w"-->
+        <!--app:layout_heightPercent="10%w"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:background="#e6e6e6"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_toRightOf="@+id/nianfo_home_chanhui_item_image2"-->
+        <!--/>-->
+        <LinearLayout
+            android:id="@+id/nianfo_home_chanhui_item_iamgelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nianfo_home_chanhui_item_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/nianfo_home_chanhui_item_iamgelayout"
+            android:text="fdfsdf"
+            android:textColor="#12b4cc"
+            android:textSize="13sp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

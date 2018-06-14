@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="@color/main_color">
+       <ImageView
+           android:id="@+id/title_back"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:scaleType="fitCenter"
+           android:padding="10dp"
+           android:src="@drawable/back"
+           android:background="@drawable/back_sel"
+           android:visibility="gone"
+           android:clickable="true"
+           android:onClick="onClick"
+           />
+       <TextView
+           android:id="@+id/title_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:textSize="18sp"
+           android:textColor="@color/white"/>
+       <TextView
+           android:id="@+id/title_info"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:padding="5dp"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:background="@drawable/back_sel"
+           />
+
+   </RelativeLayout>
+
+    <EditText
+        android:id="@+id/sign_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_shape"
+        android:padding="10dp"/>
+
+</LinearLayout>

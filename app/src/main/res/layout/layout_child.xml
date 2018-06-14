@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#f2f2f2"
+    android:gravity="center"
+    >
+
+        <TextView
+            android:id="@+id/dongtai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:text="看动态"/>
+        <TextView
+            android:id="@+id/sixin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:text="发私信"/>
+        <TextView
+            android:id="@+id/kanzixliao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_height="match_parent"
+            android:text="看资料"/>
+
+
+</LinearLayout>

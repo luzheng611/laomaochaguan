@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/fund_swip">
+      <com.laomachaguan.View.LoadMoreListView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scrollbars="none"
+          android:divider="@null"
+          android:dividerHeight="10dp"
+          android:paddingTop="10dp"
+          android:paddingRight="10dp"
+          android:paddingLeft="10dp"
+          android:background="#dddddd"
+          android:id="@+id/fund_listview">
+
+      </com.laomachaguan.View.LoadMoreListView>
+   </android.support.v4.widget.SwipeRefreshLayout>
+   <ImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:layout_gravity="center"
+       android:id="@+id/tip"
+       />
+</FrameLayout>

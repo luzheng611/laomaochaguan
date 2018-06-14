@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:id="@+id/fund_list_item_head"
+        android:layout_width="50dp"
+        android:background="@drawable/shape_circle_1dp_head"
+        android:layout_height="50dp" />
+
+
+    <TextView
+        android:id="@+id/fund_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="名"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/fund_list_item_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="元"
+        android:textColor="@color/main_color"
+        android:textSize="15sp"
+
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fund_list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textSize="13sp"
+        android:visibility="gone" />
+</LinearLayout>
+
+

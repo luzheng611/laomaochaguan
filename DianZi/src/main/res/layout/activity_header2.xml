@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <ImageView
+        android:id="@+id/activity_item_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_heightPercent="25%w"
+        app:layout_widthPercent="35%w" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        app:layout_heightPercent="25%w"
+        >
+
+        <TextView
+            android:id="@+id/activity_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="dfsdf"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/activity_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_item_title"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="dfsdf"
+            android:textColor="#606060"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/activity_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_item_peopleNum"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:text="fsf"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/activity_item_peopleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:text="dsfsdf"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

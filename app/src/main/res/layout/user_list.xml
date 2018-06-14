@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/titlebar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:src="@drawable/back"
+            android:padding="13dp"
+            android:scaleType="fitCenter"
+            android:onClick="onClick"
+            android:id="@+id/title_back"
+            android:background="@drawable/back_sel"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:hint="请输入关键字"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/item_shape"
+            />
+        <TextView
+            android:id="@+id/search"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_sel"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swip"
+        android:layout_marginTop="45dp"
+        >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fund_people_list"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:padding="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ImageView
+        android:id="@+id/fans_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/load_fail"
+        android:padding="10dp"
+        android:onClick="onClick"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</merge>

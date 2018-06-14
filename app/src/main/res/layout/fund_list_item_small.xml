@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/fund_list_item_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fund_list_item_small_Tosurpport"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:text="标题"
+            android:lines="2"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/fund_list_item_small_Tosurpport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="我要助学"
+            android:padding="8dp"
+            android:background="@drawable/back_sel"
+            android:layout_alignBaseline="@+id/fund_list_item_small_title"
+            android:textColor="@color/red"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fund_list_item_small_title"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line"
+            android:layerType="software" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/l1"
+            android:id="@+id/fund_list_item_small_layout1"
+            >
+        <LinearLayout
+            style="@style/funding_list_tv_money_line"
+            android:layout_below="@+id/l1"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/funding_list_tv_money_name"
+                android:text="目标金额" />
+
+            <TextView
+                android:id="@+id/tv_goal_money"
+                style="@style/funding_list_tv_money_real"
+                android:text="￥208.3万" />
+        </LinearLayout>
+            <LinearLayout
+                style="@style/funding_list_tv_money_line"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    style="@style/funding_list_tv_money_name"
+                    android:text="剩余天数" />
+
+                <TextView
+                    android:id="@+id/tv_rest_time"
+                    style="@style/funding_list_tv_money_real"
+                    android:text="￥208.3万" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fund_list_item_small_layout1"
+            >
+
+            <LinearLayout
+                style="@style/funding_list_tv_money_line"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    style="@style/funding_list_tv_money_name"
+                    android:text="已达成" />
+
+                <TextView
+                    android:id="@+id/tv_get_money"
+                    style="@style/funding_list_tv_money_real"
+                    android:text="￥208.3万" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/funding_list_tv_money_line"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    style="@style/funding_list_tv_money_name"
+                    android:text="参与人数" />
+
+                <TextView
+                    android:id="@+id/tv_support_count"
+                    style="@style/funding_list_tv_money_real"
+                    android:text="￥208.3万" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/mine_guanzhu_image"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/mine_guanzhu_username"
+        android:layout_alignTop="@+id/mine_guanzhu_image"
+        android:layout_toRightOf="@+id/mine_guanzhu_image"
+        android:layout_margin="3dp"
+        android:textSize="15sp"
+        android:text="dfdsd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mine_guanzhu_msg"
+        android:layout_alignLeft="@+id/mine_guanzhu_username"
+        android:layout_below="@+id/mine_guanzhu_username"
+        android:textSize="13sp"
+        android:text="dfsdf"
+        android:textColor="@color/huise"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mine_guanzhu_cancel"
+        android:text="取消"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:background="@drawable/button1_sel"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mine_guanzhu_live_room"
+        android:text="直播间"
+        android:layout_toLeftOf="@+id/mine_guanzhu_cancel"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:background="@drawable/button1_sel"
+        android:textColor="@color/white"/>
+</RelativeLayout>

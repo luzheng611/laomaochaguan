@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/result_msg"
+        android:text="sdfsdfsdf"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/phone"
+        android:text="sdfsdfsakljflksadjflksdajfklsajdfkl;jsadklfjsadkl;fjsdaklfj;kls"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        android:text="(我们的工作人员将与您取得联系)"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:id="@+id/commit"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_sel"/>
+</LinearLayout>

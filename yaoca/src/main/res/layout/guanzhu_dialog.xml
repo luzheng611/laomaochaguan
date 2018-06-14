@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_item_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="朋友验证"
+        android:id="@+id/title"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:lineSpacingExtra="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/tip"
+        android:text="您需要发送验证申请，等对方通过。添加成功后您的个人信息将对方开放，确定添加吗?"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/guanzhu_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:maxLength="50"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:padding="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d6d6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/back_sel"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/wordhuise"
+            android:textSize="16dp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#d6d6d6"/>
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/back_sel"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/black"
+
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

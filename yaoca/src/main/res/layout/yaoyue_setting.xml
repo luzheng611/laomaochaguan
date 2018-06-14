@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/main_color">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_sel"
+            android:clickable="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"
+             />
+
+        <TextView
+            android:id="@+id/title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="邀约设置"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#dddddd"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="需付押金:"/>
+
+            <EditText
+                android:id="@+id/edt_money"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:hint="10元及以上"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:text="元/人"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#dddddd"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="邀约地点:"/>
+
+            <EditText
+                android:id="@+id/edt_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:hint="请输入邀约地点"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button1_sel"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:text="修改"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:visibility="gone"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="押金可直接展示您的诚恳，应邀人数会成倍增加，完成邀约更迅速"/>
+
+</LinearLayout>

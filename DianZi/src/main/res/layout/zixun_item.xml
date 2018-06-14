@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="35%w"
+        app:layout_heightPercent="26%w"
+        android:id="@+id/zixun_item_img"
+        android:scaleType="centerCrop"
+        app:layout_marginPercent="2%w"
+        app:layout_marginLeftPercent="1%w"
+        />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        app:layout_heightPercent="26%w"
+        app:layout_marginPercent="2%w"
+        app:layout_marginLeftPercent="0%w"
+        >
+
+        <TextView
+            android:id="@+id/zixun_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/zixun_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#646464"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_below="@+id/zixun_item_title"
+
+            />
+        <TextView
+            android:id="@+id/zixun_item_sourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#909090"
+            android:layout_below="@+id/zixun_item_content"/>
+
+
+            <TextView
+                android:id="@+id/zixun_item_ClickNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#909090"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/zixun_item_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zixun_item_time"
+                android:textSize="11sp"
+                android:textColor="#b1b1b1"
+                android:layout_alignParentBottom="true"
+                />
+
+    </RelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

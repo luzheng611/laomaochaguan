@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    android:divider="@drawable/mdivider"
+    >
+   <!--<ImageView-->
+       <!--android:background="@drawable/ff"-->
+       <!--android:layout_width="0dp"-->
+       <!--android:layout_weight="1"-->
+       <!--android:layout_height="match_parent"-->
+       <!--android:scaleType="centerCrop"/>-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/mine_gongke_fragment_oneitme"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <ImageView
+            android:id="@+id/mine_gongke_fragment_oneimage"
+           android:background="@drawable/nf_gk"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/mine_gongke_fragment_onetv"
+            android:gravity="center"
+            android:text="功课一 ：念佛"
+            android:textColor="#f7bebaad"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mine_gongke_fragment_twoitme"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/mine_gongke_fragment_twoimage"
+                android:background="@drawable/nf_gk"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mine_gongke_fragment_twotv"
+                android:gravity="center"
+                android:text="功课二 ：诵经"
+                android:textColor="#f7bebaad"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mine_gongke_fragment_threeitme"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/mine_gongke_fragment_threeimage"
+                android:background="@drawable/nf_gk"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mine_gongke_fragment_threetv"
+                android:gravity="center"
+                android:text="功课三 ：持咒"
+                android:textColor="#f7bebaad"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mine_gongke_fragment_fouritme"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/mine_gongke_fragment_fourimage"
+                android:background="@drawable/nf_gk"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mine_gongke_fragment_fourtv"
+                android:gravity="center"
+                android:text="功课四 ：助念"
+                android:textColor="#f7bebaad"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mine_gongke_fragment_fiveitme"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/mine_gongke_fragment_fiveimage"
+                android:background="@drawable/nf_gk"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mine_gongke_fragment_fivetv"
+                android:gravity="center"
+                android:text="功课五 ：忏悔"
+                android:textColor="#f7bebaad"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

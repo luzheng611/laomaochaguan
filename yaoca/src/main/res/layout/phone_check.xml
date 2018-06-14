@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title_default"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/phonenumber" />
+
+            <EditText
+                android:id="@+id/Zhuce_phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="手机号/Phone Number"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="5dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2151515" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/yanzhengma" />
+
+            <EditText
+                android:id="@+id/Zhuce_Mid"
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="验证码/id"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/Zhuce_getMid"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/black_stroke_shape"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2151515" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/zhuce_commit"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/black_stroke_shape"
+        android:text="确认"
+        android:textColor="@color/wordblack"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

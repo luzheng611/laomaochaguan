@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num"
+        android:layout_alignParentRight="true"
+        android:text="数量"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/num"
+        android:text="支付金额"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/money"
+        android:text="原价"
+        android:layout_centerVertical="true"
+        android:id="@+id/cost"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

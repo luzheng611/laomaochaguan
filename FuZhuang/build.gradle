@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    useLibrary 'org.apache.http.legacy'
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            res.srcDirs = ['src/main/res', 'src/main/sidebar', 'src/main/res-pinglun', 'src/main/share']
+        }
+
+    }
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.fuzhang"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('C://Users/laoma/Desktop/WorkSpace/ytl.jks')
+            storePassword "883120"
+            keyAlias "ytl"
+            keyPassword "883120"
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+    maven { url "https://jitpack.io" }
+
+}
+dependencies {
+
+    //65535 难受
+    compile 'com.android.support:multidex:1.0.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //    compile 'com.android.support:support-v4:23.3.0'
+
+    //    compile project(':jcvideoplayer-lib')
+    compile 'fm.jiecao:jiecaovideoplayer:3.6.1'
+    //友盟、、、、、、、、、、、、、、、、、、、、
+
+    //友盟、、、、、、、、、、、、、、、、、、、、
+    compile 'com.android.support:design:23.3.0'
+    //    //地图
+
+    //地图
+
+    //居中侧图
+
+    //    compile 'com.githang:com-phillipcalvin-iconbutton:2.0.2'
+    compile 'cn.carbs.android:AvatarImageView:1.0.2'
+    //    compile project(':okhttputils')
+    compile 'com.lzy.net:okhttputils:1.8.1'
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    compile 'com.android.support:cardview-v7:23.2.1'
+    //    compile files('libs/UPPayPluginExPro.jar')
+
+    //    compile files('libs/UPPayAssistEx.jar')
+    compile project(':library')
+    compile files('libs/zxing-3.2.1.jar')
+//    compile files('libs/utdid4all-1.1.5.2.jar')
+    compile files('libs/alisdk-ut-5.jar')
+    compile files('libs/alicloud-android-push-sdk-2.3.5.jar')
+    compile files('libs/mqqopenpay.jar')
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+    //轮播图控件
+    compile 'com.youth.banner:banner:1.4.9'
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_WeiXin_Full.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.1.6.jar')
+    //图片加载扩展
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.7'
+    compile files('libs/jxl.jar')
+//    compile files('libs/alipaySingle-20170510.jar')
+    //tiny图片压缩
+    compile 'com.zxy.android:tiny:0.0.1'
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.1'
+    //图片选择器
+    compile 'com.zhihu.android:matisse:0.4.3'
+    //时间选择，条件选择，三级联动
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    //继续滑动
+    compile 'homhomlin.lib:sldinglayout:0.9.0'
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile 'com.github.yalantis:ucrop:2.2.1'
+    compile files('libs/alipaySdk-20160825.jar')
+
+
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+
+
+
+    compile 'com.alibaba:fastjson:1.1.62.android'
+    //事件总线
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.zhy:flowlayout-lib:1.0.3'//盒子布局
+    compile project(':Editor')
+    compile project(':EditorLibrary')
+    compile 'com.lzy.widget:imagepicker:0.5.5'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+}

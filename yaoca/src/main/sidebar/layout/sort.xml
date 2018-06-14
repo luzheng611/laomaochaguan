@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_black"
+            android:padding="10dp"
+            android:background="@drawable/back_sel"
+            android:scaleType="fitCenter"/>
+
+        <com.yunfengsi.SideListview.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint=""
+            android:lines="1"
+            android:textSize="15.0dip" />
+        <TextView
+            android:id="@+id/fasong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button1_sel"
+            />
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:dividerHeight="5dp"/>
+        <com.yunfengsi.SideListview.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/button1_shape"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

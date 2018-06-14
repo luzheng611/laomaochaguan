@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_sel"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/userName"
+        tools:text="姓名"
+        android:layout_alignTop="@+id/head"
+        android:layout_toRightOf="@+id/head"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/wordhuise"
+        android:id="@+id/message"
+        tools:text="消息"
+        android:layout_alignBottom="@+id/head"
+        android:layout_toRightOf="@+id/head"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/wordhuise"
+        android:id="@+id/time"
+        tools:text="时间"
+        android:layout_alignBottom="@+id/head"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

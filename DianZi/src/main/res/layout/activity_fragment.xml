@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_swip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.laomachaguan.View.LoadMoreListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/white"
+            android:dividerHeight="5dp"
+            android:scrollbars="none"
+            android:id="@+id/activity_listview">
+
+        </com.laomachaguan.View.LoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/activity_tip"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+</FrameLayout>

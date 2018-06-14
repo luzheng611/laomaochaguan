@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/titlebar_bg">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_sel"
+
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图文管理"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_sel"
+            android:padding="5dp"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="90dp">
+
+        <com.laomachaguan.View.LoadMoreListView
+            android:id="@+id/fund_people_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f6f6f6"
+            android:dividerHeight="1px"
+            android:scrollbars="none">
+
+        </com.laomachaguan.View.LoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/fans_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:src="@mipmap/load_fail"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#e6e6e6">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_shape"
+            android:layout_margin="10dp"
+            android:hint="搜索图文"
+            android:textSize="14dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:drawablePadding="5dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fabu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="16dp"
+        android:text="发布图文"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/main_color"
+        android:layout_gravity="bottom"
+        />
+</merge>

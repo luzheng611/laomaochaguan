@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/layout_bg_sel"
+    android:padding="10dp">
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/user_list_item_head"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/user_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="名"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/user_list_item_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:ellipsize="marquee"
+            android:text="time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

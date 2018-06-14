@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="0dp"
+        app:layout_widthPercent="8%w"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mine"/>
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/item_img"
+        android:text="今日头条"/>
+
+
+        <TextView
+            android:id="@+id/gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textSize="12sp"
+            android:layout_toLeftOf="@+id/next"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:src="@drawable/item_tip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

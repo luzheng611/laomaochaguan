@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/titlebar_bg">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:background="@drawable/back_sel"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/choose_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="7dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/title_toggle_layout_shape"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pintuan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_left_3dp_sixin"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="我的拼团"
+                android:tag="0"
+                android:textSize="14dp"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="1.5px"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_right_3dp_sixin"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="我的关注"
+                android:tag="1"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="我的订单"/>
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</merge>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_bg_sel"
+    android:padding="6dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/title"
+        android:layout_gravity="center_vertical"
+        tools:text="商品名称"
+        android:layout_marginRight="60dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/num"
+        android:layout_alignParentRight="true"
+        tools:text="×1"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tags"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/num"
+        android:textSize="14dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/wordhuise"
+        android:id="@+id/tags"
+        />
+</RelativeLayout>

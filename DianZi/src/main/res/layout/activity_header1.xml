@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/wordblack"
+        android:textStyle="bold"
+        android:text="最新活动"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/line_text_left"
+        android:drawablePadding="10dp"
+        android:background="@color/white"/>
+   <com.zhy.android.percent.support.PercentLinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       >
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           app:layout_widthPercent="35%w"
+           app:layout_heightPercent="25%w"
+           android:id="@+id/activity_item_img"
+           android:scaleType="centerCrop"
+           />
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="0dp"
+           android:layout_marginLeft="5dp"
+           app:layout_heightPercent="25%w"
+           >
+
+           <TextView
+               android:id="@+id/activity_item_title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:textColor="@color/black"
+               android:maxLines="1"
+               android:ellipsize="end"
+               android:text="dfsdf"
+               />
+           <TextView
+               android:id="@+id/activity_item_content"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="dfsdf"
+               android:textColor="#606060"
+               android:ellipsize="end"
+               android:maxLines="1"
+               android:layout_below="@+id/activity_item_title"
+
+               />
+           <TextView
+               android:id="@+id/activity_item_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="fsf"
+               android:layout_marginRight="5dp"
+               android:layout_marginTop="3dp"
+               android:textColor="#202020"
+               android:layout_above="@+id/activity_item_peopleNum"/>
+
+
+           <TextView
+               android:id="@+id/activity_item_peopleNum"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:layout_marginTop="3dp"
+               android:text="dsfsdf"
+               android:layout_marginRight="5dp"
+               android:textColor="#202020"
+               android:layout_alignParentBottom="true"/>
+
+
+       </RelativeLayout>
+
+   </com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

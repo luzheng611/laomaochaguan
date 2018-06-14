@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle|end"
+    android:divider="@drawable/mdivider"
+   >
+    <RelativeLayout
+        android:background="@drawable/titlebar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageButton
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:onClick="onClick"
+            android:id="@+id/anquan_back"
+
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_sel"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="账号与安全"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="7dp"
+        android:onClick="onClick"
+        android:id="@+id/anquan_nichen_back">
+        <TextView
+            android:textColor="@color/wordblack"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="昵称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/anquan_nichen_back1"
+            android:src="@drawable/item_tip"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:id="@+id/anquan_nichen_tv"
+            android:textColor="@color/wordhuise"
+            android:layout_centerVertical="true"
+            android:text="昵称"
+            android:textSize="15dp"
+            android:layout_toLeftOf="@+id/anquan_nichen_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="7dp"
+        android:onClick="onClick"
+        android:id="@+id/anquan_xinbie_back">
+        <TextView
+            android:textColor="@color/wordblack"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="性别"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/item_tip"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:id="@+id/anquan_xinbie_back1"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:id="@+id/anquan_xinbie_tv"
+            android:textColor="@color/wordhuise"
+            android:layout_centerVertical="true"
+            android:text="女"
+            android:textSize="15dp"
+            android:layout_toLeftOf="@+id/anquan_xinbie_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="52dp"-->
+        <!--android:padding="7dp"-->
+        <!--android:onClick="onClick"-->
+        <!--android:id="@+id/anquan_simiao_back">-->
+        <!--<TextView-->
+            <!--android:textColor="@color/wordblack"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textSize="18dp"-->
+            <!--android:text="所属寺庙"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<ImageButton-->
+            <!--android:src="@drawable/item_tip"-->
+            <!--android:background="@null"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:id="@+id/anquan_simiao_back1"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/anquan_simiao_tv"-->
+            <!--android:textColor="@color/wordhuise"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="无"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_toLeftOf="@+id/anquan_simiao_back1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="7dp"
+        android:visibility="gone"
+        android:onClick="onClick"
+        android:id="@+id/anquan_mima_back">
+        <TextView
+            android:textColor="@color/wordblack"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/item_tip"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="gone"
+        android:padding="7dp">
+        <TextView
+            android:textColor="@color/wordblack"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="当前登录状态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/zhanghaoyuanquan_loginState"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/wordhuise"
+            android:layout_centerVertical="true"
+            android:text="手机号+密码"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

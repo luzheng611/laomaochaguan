@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+   >
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:id="@+id/nianfo_item_ima"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        app:layout_heightPercent="13%w"
+        app:layout_widthPercent="13%w" />
+
+
+    <TextView
+        android:id="@+id/nianfo_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nianfo_item_ima"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/nianfo_item_ima"
+        android:textColor="#3aafd1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/nianfo_item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nianfo_item_ima"
+        android:layout_alignRight="@+id/nianfo_item_name"
+        android:textSize="13sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/nianfo_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nianfo_item_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:textSize="12sp"
+        android:textColor="@color/huise"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

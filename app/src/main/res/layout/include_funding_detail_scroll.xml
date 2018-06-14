@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp">
+       <android.support.v4.view.ViewPager
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:id="@+id/fund_detail_viewPager"
+           android:layout_below="@+id/detail_l1"
+           >
+       </android.support.v4.view.ViewPager>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="center_horizontal|bottom"
+           android:id="@+id/fund_detail_circlePoint_layout"
+           android:layout_marginBottom="10dp">
+       </LinearLayout>
+   </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_fund_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="正在加载数据，请稍等"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/tv_support_count"/>
+
+        <TextView
+            android:id="@+id/tv_support_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/huise"
+            android:layout_alignBaseline="@+id/tv_fund_detail_title"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.laomachaguan.Model_zhongchou.CircleProgressView
+                android:id="@+id/circle_people_num"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="支持人次"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.laomachaguan.Model_zhongchou.CircleProgressView
+            android:id="@+id/circle_funding_percent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.laomachaguan.Model_zhongchou.CircleProgressView
+                android:id="@+id/circle_time_rest"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="剩余时间"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccccc"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/funding_detail_line">
+
+                <TextView
+                    android:id="@+id/tv_money_goal"
+                    style="@style/funding_detail_tv"
+                    android:textSize="20sp" />
+
+                <TextView
+                    style="@style/funding_detail_tv"
+                    android:text="目标金额"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:background="#cccccccc"></View>
+
+            <LinearLayout style="@style/funding_detail_line">
+
+                <TextView
+                    android:id="@+id/tv_money_get"
+                    style="@style/funding_detail_tv"
+                    android:textSize="20sp" />
+
+                <TextView
+                    style="@style/funding_detail_tv"
+                    android:text="达成金额"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccccc"></View>
+    </LinearLayout>
+    <!--项目详情 评论-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/btn_item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="项目详情"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fund_status"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button1_sel"
+
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="我要助学"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#d6d6d6" />
+
+
+    <TextView
+        android:id="@+id/tv_funding_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="7dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/darkgray"
+        android:textScaleX="1.025"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="最新评论"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#d6d6d6" />
+
+    <com.laomachaguan.View.mPLlistview
+        android:id="@+id/pull_to_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

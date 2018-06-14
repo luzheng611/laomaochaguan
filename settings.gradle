@@ -1,0 +1,5 @@
+include ':app', ':library', ':PhotoView', ':FuZhuangAPP', ':YaoCai', ':baihuoo', ':DianZiApp', ':Editor', ':EditorLibrary'
+project(':FuZhuangAPP').projectDir = new File('FuZhuang')
+project(':YaoCai').projectDir = new File('yaoca')
+project(':baihuoo').projectDir = new File('BaiHuo')
+project(':DianZiApp').projectDir = new File('DianZi')

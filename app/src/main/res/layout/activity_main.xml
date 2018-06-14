@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/titlebar_bg"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/back"
+            android:background="@drawable/back_sel"
+            android:visibility="gone"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/title_image2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/title_image3"
+            android:scaleType="centerCrop"
+            android:padding="7dp"
+            android:src="@drawable/search"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/back_sel"
+            />
+        <ImageView
+            android:id="@+id/title_image3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:padding="7dp"
+            android:background="@drawable/back_sel"
+            android:src="@drawable/home_add_more"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+
+    </android.support.v4.view.ViewPager>
+
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wordhuise"
+        android:layout_gravity="bottom"
+        />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/home_bottom_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabSelectedTextColor="@color/main_color"
+        app:tabBackground="@null"
+        app:tabIndicatorHeight="0dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        >
+
+    </android.support.design.widget.TabLayout>
+</LinearLayout>

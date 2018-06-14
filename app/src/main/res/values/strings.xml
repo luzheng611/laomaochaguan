@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">老马茶馆</string>
+    <string name="versonid">1.1.0</string>
+
+
+    <string-array name="bottom_title">
+        <item>圈子</item>
+        <item>商城</item>
+
+        <item>邀约</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="mine_admin">
+        <item>好友</item>
+        <item>消息</item>
+        <item>通知</item>
+
+        <item>用户</item>
+        <item>积分</item>
+        <item>收藏</item>
+        <item>账单</item>
+
+
+
+        <item>帮助</item>
+        <item>设置</item>
+        <item>切换账号</item>
+    </string-array>
+
+    <string-array name="mine_user">
+        <item>免费开店</item>
+        <item>好友</item>
+        <item>消息</item>
+        <item>通知</item>
+        <item>拼团</item>
+        <item>积分</item>
+        <item>收藏</item>
+        <item>账单</item>
+
+
+
+        <item>帮助</item>
+        <item>设置</item>
+        <item>切换账号</item>
+
+
+
+    </string-array>
+    <string-array name="mine_agent">
+        <item>我的店铺</item>
+        <item>好友</item>
+        <item>消息</item>
+        <item>通知</item>
+        <item>拼团</item>
+        <item>积分</item>
+        <item>收藏</item>
+        <item>账单</item>
+
+
+
+        <item>帮助</item>
+        <item>设置</item>
+        <item>切换账号</item>
+
+
+
+    </string-array>
+
+
+    <string name="font_size">Size</string>
+    <string name="font_color">Text Color</string>
+    <string name="font_spacing">Exact Spacing</string>
+    <string name="font_none">none</string>
+    <string name="font_highlight_color">Highlight</string>
+    <string name="font_default_text">AaBbCcDd</string>
+    <string name="font_style_normal">Normal</string>
+    <string name="font_style_heading_1">Heading 1</string>
+    <string name="font_style_heading_2">Heading 2</string>
+    <string name="font_style_heading_3">Heading 3</string>
+    <string name="font_insert">Insert</string>
+    <string name="edit_hyperlink">Edit Hyperlink</string>
+    <string name="address">Address:</string>
+    <string name="text_to_display">Text to display:</string>
+    <string name="ok">OK</string>
+    <string name="edit_table">Edit Table</string>
+    <string name="heading_4">Heading 4</string>
+    <string name="heading_5">Heading 5</string>
+    <string name="heading_6">Heading 6</string>
+
+
+    <string name="home_bigTab1">云峰慈善</string>
+    <string name="mine_itme1_name">我的收藏</string>
+    <string name="mine_itme2_name">我的资料</string>
+    <string name="mine_itme3_name">版本信息</string>
+    <string name="mine_logout">退出登录</string>
+    <!--home_BigTab-->
+    <!--<string name="margin_BigTab_img_text">0dp</string>-->
+    <string name="textSize_BigTab_text">12%w</string>
+    <string name="size_BigTab_img">45%w</string>
+
+
+    <string-array name="home_item_type">
+        <item name="home_item1">今日头条</item>
+        <item name="home_item2">最热视频</item>
+        <item name="home_item3">最新直播</item>
+        <item name="home_item4">寺庙</item>
+    </string-array>
+
+
+    <!--颜色-->
+
+    <color name="huise">#9b9b9b</color>
+    <color name="light_huise">#eeeeee</color>
+    <color name="main_color">#000000</color>
+    <color name="textOnImg_bg">#22000000</color>
+
+    <!--Video_Detail-->
+    <string-array name="gongyang">
+        <item name="gongyang1">供养等级1</item>
+        <item name="gongyang2">供养等级2</item>
+        <item name="gongyang3">供养等级3</item>
+    </string-array>
+
+
+</resources>

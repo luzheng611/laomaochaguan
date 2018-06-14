@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle|end"
+    android:divider="@drawable/mdivider"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/titlebar_bg"
+        >
+
+        <ImageButton
+            android:id="@+id/shez_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_sel"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shez_geren_back"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg_sel"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="个人信息"
+            android:textColor="@color/wordblack"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_tip" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg_sel"
+        android:padding="10dp"
+        android:clickable="true"
+        android:id="@+id/shez_anquan_back"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="信息修改"
+            android:textColor="@color/wordblack"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_tip" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg_sel"
+        android:padding="10dp"
+        android:clickable="true"
+        android:id="@+id/findPassword"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="账号安全"
+            android:textColor="@color/wordblack"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_tip" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg_sel"
+        android:padding="10dp"
+        android:clickable="true"
+        android:id="@+id/shez_address"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="收货地址管理"
+            android:textColor="@color/wordblack"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_tip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg_sel"
+        android:padding="10dp"
+        android:clickable="true"
+        android:id="@+id/shez_huanc_back"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="清除缓存"
+            android:textColor="@color/wordblack"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/shez_huanc_back1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_tip" />
+        <TextView
+            android:id="@+id/shez_huanczi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/shez_huanc_back1"
+            android:text="7.00M"
+            android:textColor="@color/wordhuise"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg_sel"
+        android:padding="10dp"
+        android:id="@+id/shez_jubao_back"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="建议反馈"
+            android:textColor="@color/wordblack"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_tip" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg_sel"
+        android:padding="10dp"
+        android:id="@+id/shez_guanyu_back"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textColor="@color/wordblack"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_tip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <!--<Button-->
+        <!--android:id="@+id/tuochu_bnt"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:background="@drawable/shapebutton"-->
+        <!--android:onClick="onClick"-->
+        <!--android:text="退出当前账号"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="16sp" />-->
+    </LinearLayout>
+</LinearLayout>

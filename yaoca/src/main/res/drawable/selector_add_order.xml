@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:state_pressed="false">-->
+        <!--<shape>-->
+            <!--<corners android:radius="4dp"/>-->
+            <!--<solid android:color="@color/main_color"/>-->
+            <!--<padding android:bottom="4dp"-->
+                <!--android:top="4dp"-->
+                <!--android:left="6dp"-->
+                <!--android:right="6dp"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:state_pressed="true">-->
+        <!--<shape>-->
+            <!--<corners android:radius="4dp"/>-->
+            <!--<solid android:color="#95963437"/>-->
+            <!--<padding android:bottom="4dp"-->
+                <!--android:top="4dp"-->
+                <!--android:left="6dp"-->
+                <!--android:right="6dp"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="4dp"/>
+            <solid android:color="#aaaaaa"/>
+            <padding android:bottom="6dp"
+                android:top="6dp"
+                android:left="8dp"
+                android:right="8dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <corners android:radius="4dp"/>
+            <solid android:color="@color/main_color"/>
+            <padding android:bottom="6dp"
+                android:top="6dp"
+                android:left="8dp"
+                android:right="8dp"/>
+        </shape>
+    </item>
+</selector>

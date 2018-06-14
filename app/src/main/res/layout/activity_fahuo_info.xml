@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:divider="@drawable/mdivider"
+    android:showDividers="middle"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/titlebar_bg">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_sel"
+            android:clickable="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发货"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:text="运单号"/>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="20dp"
+            android:layout_below="@+id/id_title"
+            android:inputType="number"
+            android:layout_toLeftOf="@+id/toscan"
+            android:padding="10dp"
+            android:hint="请输入或扫描运单号"/>
+
+        <ImageView
+            android:id="@+id/toscan"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/code"
+            android:padding="10dp"
+            android:src="@drawable/scan"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chooseCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择快递公司"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@drawable/layout_bg_sel"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/commit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@drawable/sel_textcolor_white_d6d6d6"
+        android:background="@drawable/selector_add_order"
+        android:padding="10dp"/>
+</LinearLayout>

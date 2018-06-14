@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_corner_white_10dp"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提现"
+        android:textSize="18dp"
+        android:id="@+id/title"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/credit_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="当前拥有积分98989898，提现比例为洛杉矶冯老师会计分录可视对讲昆仑决"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/credit_exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前拥有积分98989898，提现比例为洛杉矶冯老师会计分录可视对讲昆仑决"
+        android:textSize="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/item_shape"
+        android:divider="@drawable/mdivider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <EditText
+            android:id="@+id/credit_needtotixian"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="请输入需要提现的积分"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/wordhuise"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/alipayId"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="请输入支付宝账号"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/wordhuise"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/alipay_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="请再次输入支付宝账号"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/wordhuise"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/alipay_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="支付宝账号的真实姓名"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/wordhuise"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d6d6d6"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@drawable/sel_textcolor_black_888888"
+            android:text="取消"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6"/>
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@drawable/sel_textcolor_lightpink_pink"
+            android:text="申请提现"/>
+    </LinearLayout>
+</LinearLayout>

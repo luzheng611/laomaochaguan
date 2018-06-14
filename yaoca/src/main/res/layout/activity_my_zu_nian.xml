@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_color">
+
+        <ImageButton
+            android:id="@+id/activity_my_zunian_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/activity_my_zunian_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/activity_my_zunian_share_bnt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@mipmap/fenxiang_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_my_zunian_tv_zhuniancontents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:background="#ffffff"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:lineSpacingExtra="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:hint="助念内容"
+        android:maxLength="200" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:id="@+id/activity_my_zunian_tv_pepole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="助念人数"
+                android:background="@drawable/black_stroke_shape"/>
+            <TextView
+                android:id="@+id/activity_my_zunian_tv_fohaonum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_marginRight="20dp"
+                />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_my_zunian_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/activity_my_zunian_tv_fohao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="助念佛号"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:background="@drawable/black_stroke_shape"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/huise" />
+
+    <ListView
+        android:id="@+id/activity_my_zunian_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:fastScrollEnabled="false"
+        android:padding="10dp"
+        android:scrollbars="none"></ListView>
+</LinearLayout>

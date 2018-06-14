@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:paddingTop="50dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/wx_imageview"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/wx_result"
+        android:layout_marginTop="20dp"
+        android:text="支付成功"
+        android:textColor="#18ad18"
+        android:textSize="22dp"/>
+    <Button
+        android:id="@+id/wx_commit"
+        android:onClick="onClick"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="#18ad18"
+        />
+
+</LinearLayout>

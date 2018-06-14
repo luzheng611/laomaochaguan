@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:layout_width="50dp"
+        android:id="@+id/head"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/head"
+        android:layout_alignTop="@+id/head"
+        android:layout_toLeftOf="@+id/gongxian"
+        android:text="昵称"
+        android:id="@+id/username"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@color/gray"
+        android:layout_toRightOf="@+id/head"
+        android:layout_alignBottom="@+id/head"
+        android:text="邀请码"
+        android:layout_toLeftOf="@+id/gongxian"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/yaoqingma"/>
+
+    <TextView
+        android:id="@+id/gongxian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        tools:text="贡献"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/deeppink"/>
+</RelativeLayout>

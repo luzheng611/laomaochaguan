@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sel_layout_selected"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:padding="3dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/checkbox_sel2"/>
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/check"
+            android:background="#e6e6e6"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/head"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/head"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/abs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="简介"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/head"
+            android:layout_alignLeft="@+id/title"
+            android:text="时间"
+            android:textSize="11dp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/delete_small"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@drawable/button1_sel"-->
+        <!--android:text="删除"-->
+        <!--android:textColor="@color/white" />-->
+    </RelativeLayout>
+</FrameLayout>
+

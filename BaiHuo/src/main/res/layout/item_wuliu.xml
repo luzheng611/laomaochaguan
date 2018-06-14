@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="物流物流龙卷风可莱丝解放垃圾快乐撒解放路家里就"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#b6b6b6"
+        android:layout_marginLeft="20dp"
+        />
+    <View
+        android:id="@+id/circle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/sel_wuliu_circle"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="14dp"
+        />
+
+
+
+</FrameLayout>

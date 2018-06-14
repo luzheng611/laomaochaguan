@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/mine_shoucang_item_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="30%w"
+        app:layout_heightPercent="24%w"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/mine_shoucang_item_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mine_shoucang_item_image"
+        android:layout_alignTop="@+id/mine_shoucang_item_image"
+        android:textSize="13dp"
+        android:text="用户姓名"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/mine_shoucang_item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="标签"
+        android:textColor="@color/colorAccent"
+        android:layout_alignTop="@+id/mine_shoucang_item_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/mine_shoucang_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题标题标题标题标题标题"
+
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_alignLeft="@+id/mine_shoucang_item_user"
+        android:layout_below="@+id/mine_shoucang_item_user"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/mine_shoucang_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间时间时间时间时间"
+        android:layout_alignLeft="@+id/mine_shoucang_item_user"
+        android:layout_alignBottom="@+id/mine_shoucang_item_image"
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"/>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

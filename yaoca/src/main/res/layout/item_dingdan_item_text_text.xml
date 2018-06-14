@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_bg_sel"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/title"
+        android:layout_gravity="center_vertical"
+        tools:text="商品名称"
+        android:layout_marginRight="60dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/num"
+        android:gravity="right"
+        android:layout_gravity="center_vertical|right"
+        tools:text="×1"
+        android:textSize="15dp"/>
+</FrameLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_default"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="* 填写以下信息,完成报名"
+        android:textColor="@color/huise"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/baoming_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/activity_baoming_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:paddingLeft="10dp"
+            android:maxLength="10"
+            android:textColor="@color/huise"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/baoming_xingbie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/activity_baoming_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="性别"
+            android:digits="男女"
+            android:paddingLeft="10dp"
+            android:textColor="@color/huise"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/baoming_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/activity_baoming_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:paddingLeft="10dp"
+            android:textColor="@color/huise"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/baoming_zhiye"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/activity_baoming_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="职业"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textColor="@color/huise"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/baoming_shenfengzheng"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="18"
+        android:background="@drawable/activity_baoming_edit_bg"
+        android:gravity="center_vertical"
+        android:hint="身份证号码"
+        android:digits="0123456789Xx"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:textColor="@color/huise"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/baoming_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/activity_baoming_edit_bg"
+        android:gravity="center_vertical"
+        android:hint="家庭住址"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:ellipsize="end"
+        android:textColor="@color/huise"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/baoming_another_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/activity_baoming_edit_bg"
+        android:gravity="center_vertical"
+        android:hint="紧急联系人号码"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:textColor="@color/huise"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/baoming_shenfengzheng_displayImg"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:src="@drawable/id_card"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="请确保身份证信息全部清晰\n\n请确保露出你的手臂"
+            android:textSize="13sp"
+            android:background="@drawable/activity_baoming_edit_bg"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="* 手持身份证照片请按照上图规范进行拍照并上传"
+        android:textColor="@color/huise"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/baoming_camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/activity_baoming_edit_bg"
+        android:gravity="center_vertical"
+        android:text="手持身份证照片(点击上传)"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:textColor="@color/huise"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/baoming_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_baoming_textview_bg"
+        android:gravity="center"
+        android:text="提交信息"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

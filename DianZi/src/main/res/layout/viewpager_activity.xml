@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#60000000"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/zoom_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:background="@drawable/back_sel"/>
+        <TextView
+            android:id="@+id/zoom_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            android:layout_toRightOf="@id/zoom_back"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="原图"
+            android:textSize="16sp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/zoom_download"
+            android:background="@drawable/button_green_sel"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zoom_pager"
+        android:layout_below="@+id/top">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

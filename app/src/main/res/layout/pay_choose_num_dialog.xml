@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/vifrification"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/normal_bg"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+    <TextView
+        android:id="@+id/one"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="1"
+        android:text="1元"
+        android:layout_width="70dp"
+        android:textSize="16dp"
+       />
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="5"
+        android:text="5元"
+        android:layout_width="70dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/one"/>
+
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="10"
+        android:text="10元"
+        android:textSize="16dp"
+
+        android:layout_toRightOf="@+id/five"/>
+
+    <TextView
+        android:id="@+id/twelve"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="20"
+        android:text="20元"
+        android:textSize="16dp"
+        android:layout_below="@+id/one"/>
+
+    <TextView
+        android:id="@+id/fifty"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="50"
+        android:text="50 元"
+        android:textSize="16dp"
+        android:layout_below="@+id/five"
+        android:layout_toRightOf="@+id/twelve"
+        />
+
+    <TextView
+        android:id="@+id/han"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="100"
+        android:text="100 元"
+        android:textSize="16dp"
+        android:layout_below="@+id/ten"
+        android:layout_toRightOf="@+id/fifty"/>
+
+    <TextView
+        android:id="@+id/two_han"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="200"
+        android:text="200 元"
+        android:textSize="16dp"
+        android:layout_below="@+id/twelve"
+        />
+
+    <TextView
+        android:id="@+id/five_han"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="500"
+        android:text="500 元"
+        android:layout_width="70dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/fifty"
+        android:layout_toRightOf="@+id/twelve"/>
+
+    <TextView
+        android:id="@+id/others"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_choose_selector"
+        android:gravity="center"
+        android:tag="more"
+        android:text="更多"
+        android:textSize="16dp"
+        android:layout_below="@+id/han"
+        android:layout_toRightOf="@+id/fifty"/>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/others"
+        android:id="@+id/otherlayout"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/otherNum"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:hint="请输入其他金额"
+            android:maxLength="6"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="元"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/agreeToPay"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button1_sel"
+        android:text="确认支付"
+
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_below="@+id/otherlayout"
+        />
+
+    <Button
+        android:id="@+id/canclePay"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button1_sel"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_below="@+id/agreeToPay"
+        />
+</RelativeLayout>
+</RelativeLayout>

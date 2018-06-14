@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gongyang_item_bg"
+    >
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:id="@+id/list_itme_imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+
+    <TextView
+        android:id="@+id/list_itme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/wordblack"
+        android:textSize="16sp"
+        android:text="name"
+        android:lines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/list_itme_qian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dfsd"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/main_color"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

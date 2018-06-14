@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:clickable="true"
+    >
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/file_item_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        android:background="@drawable/button_green_sel"/>
+    <LinearLayout
+        android:id="@+id/file_item_layout"
+        android:layout_toRightOf="@+id/file_item_cancle"
+        android:layout_width="wrap_content"
+        android:background="@drawable/tougao_addtileimg_bg"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/file_item_name"
+            android:text="标题"/>
+        <TextView
+            android:id="@+id/file_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时长"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/file_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件大小"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+    <com.laomachaguan.View.mAudioView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_item_layout"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/file_item_layout"
+        android:id="@+id/audio">
+
+    </com.laomachaguan.View.mAudioView>
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:layout_width="240dp"
+        android:layout_height="135dp"
+        android:id="@+id/video"
+        android:layout_below="@+id/file_item_layout"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/file_item_layout"></fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+</RelativeLayout>

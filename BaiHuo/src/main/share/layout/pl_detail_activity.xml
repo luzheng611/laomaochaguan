@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    >
+
+
+    <include layout="@layout/title_default"
+        android:id="@+id/title"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:id="@+id/layout"
+        android:layout_marginTop="40dp"
+        android:paddingTop="15dp">
+
+        <!--<ImageView-->
+        <cn.carbs.android.avatarimageview.library.AvatarImageView
+            android:id="@+id/PL_item_Head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/PL_item_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/PL_item_Head"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="昵称"
+            android:textColor="#4b4b4b"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/Pl_item_DianZan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray"
+            android:layout_alignBottom="@+id/PL_item_Name"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/Pl_item_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PL_item_time"
+            android:layout_alignLeft="@+id/PL_item_time"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="17dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/gray"
+            android:id="@+id/PL_item_time"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/PL_item_Head"
+            android:layout_alignBottom="@+id/PL_item_Head"
+            android:layout_marginTop="5dp"
+            android:text="时间"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/pl_huifu_layout"
+            android:background="#f5f8f8"
+            android:padding="5dp"
+            android:layout_below="@+id/Pl_item_Content"
+            android:layout_alignLeft="@+id/Pl_item_Content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:id="@+id/article_head"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/article_title"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------  全部回复  -----------------------"
+        android:gravity="center"
+        android:textColor="#c6c6c6"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/layout"
+        android:id="@+id/lin"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin"
+        android:layout_above="@+id/zixun_bottomLayout">
+        <com.laomachaguan.View.mPLlistview
+            android:id="@+id/zixun_item_plListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:divider="#e6e6e6"
+            android:background="@color/white"
+            android:footerDividersEnabled="false"
+            android:padding="10dp"
+
+            android:scrollbars="none"
+            >
+        </com.laomachaguan.View.mPLlistview>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/zixun_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="#ccffffff"
+        >
+
+        <EditText
+            android:id="@+id/zixun_item_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="请输入您的回复"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/zixun_item_fasong"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button1_sel"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

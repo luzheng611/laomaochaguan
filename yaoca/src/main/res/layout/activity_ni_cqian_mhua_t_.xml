@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_color"
+        android:paddingTop="7dp"
+        android:paddingRight="7dp">
+
+        <ImageButton
+            android:id="@+id/ncqmht_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_sel"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/ncqmht_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ncqmht_baochun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="保存"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/ncqmht_relativelayout_nc"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/ncqmht_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="6"/>
+        <ImageButton
+            android:id="@+id/ncqmht_qingchu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/cha" />
+    </RelativeLayout>
+    <Spinner
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/spinner_temple"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"/>
+</LinearLayout>

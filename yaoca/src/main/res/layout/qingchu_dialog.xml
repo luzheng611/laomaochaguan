@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="160dp"
+    android:layout_height="100dp">
+<TextView
+    android:background="#ffffff"
+    android:textSize="17dp"
+    android:gravity="center"
+    android:text="是否清除缓存"
+    android:textColor="#c6b787"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/qingchu_dialog_no"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:background="#cececd"
+            android:text="下次再说"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/qingchu_dialog_yes"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:background="#fa7a73"
+            android:text="清除"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
